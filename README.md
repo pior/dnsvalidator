@@ -1,5 +1,7 @@
 # DNS Validator
 
+[![GoDoc](https://godoc.org/github.com/pior/dnsvalidator?status.svg)](https://godoc.org/github.com/pior/dnsvalidator)
+
 Validate that a set of resource records are set on all nameservers.
 
 Uses [github.com/domainr/dnsr](https://github.com/domainr/dnsr) as recursor to avoid external DNS caching.
