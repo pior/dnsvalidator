@@ -1,0 +1,23 @@
+# DevBuddy config file
+# See https://github.com/devbuddy/devbuddy/blob/master/docs/Config.md
+
+env:
+  ENV: development
+
+up:
+  - homebrew:
+    - golangci/tap/golangci-lint
+  - go:
+      version: 1.12.4
+      modules: true
+
+commands:
+  test:
+    desc: Run all tests
+    run: go test ./... -cover
+  lint:
+    desc: Run the linters
+    run: golangci-lint run
+
+open:
+  devbuddy: https://github.com/devbuddy/devbuddy/blob/master/docs/Config.md#config-devyml
